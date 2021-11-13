@@ -87,10 +87,40 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 ![](https://media.giphy.com/media/5j3c85VHelz84HeE52/giphy.gif)
 
 ## Schema 
-[This section will be completed in Unit 9]
+
 ### Models
-[Add table of models]
+#### Post 
+| Property      | Type     | Description |
+| ------------- | -------- | ------------|
+| objectId      | String   | unique id for the user post (default field) |
+| author        | Pointer to User| image author |
+| image         | File     | image that user posts |
+| description       | String   | description of the selling item |
+| userContactNumber       | String   | author's contact phone number  |
+|userEmail | String | author's contact email
+| pickupInfo        |  String| information on picking up the item
+   | category    | String   | defines which category the user is posting under (furniture/academic) |
+   | createdAt     | DateTime | date when post is created (default field) |
+   | updatedAt     | DateTime | date when post is last updated (default field) |
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Home Feed screen 
+    - (Read/GET) Query all posts in their selected category
+    - (Read/GET) See the detail of selected post 
+    - (Delete/DELETE) Delete post
+- Create Post screen 
+    - (Create/POST) Create a new post object
+
+- Profile Screen
+    - (Read/GET) Query logged in user object
+    - (Update/PUT) Update contact info
+    - (Update/PUT) Update NYU Campus preferences (Wash Sq/Brooklyn/Both)
+    - (Update/PUT) Update profile picture
+
+- Login Screen
+    - (Read/GET) Query user object
+
+- Sign up Screen
+    - (Create/POST) Create a new user object
+- Search Screen
+    - (Read/Get) Get relevant post 
