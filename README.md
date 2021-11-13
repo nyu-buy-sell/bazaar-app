@@ -1,4 +1,4 @@
-# NYU Buy & Sell
+# NYU Bazaar
 
 ## Table of Contents
 1. [Overview](#Overview)
