@@ -77,12 +77,12 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 ## Wireframes
 <img src="https://i.imgur.com/Ix8C8Wv.png" width=600>
 
-### [BONUS] Digital Wireframes & Mockups
+### Digital Wireframes & Mockups
 
 ![](https://i.imgur.com/v764pvx.png)
 ![](https://i.imgur.com/LDOkJB6.png)
 
-### [BONUS] Interactive Prototype
+### Interactive Prototype
 ![](https://media.giphy.com/media/B57uFr5NSWwyXvKJS5/giphy.gif)
 ![](https://media.giphy.com/media/5j3c85VHelz84HeE52/giphy.gif)
 
