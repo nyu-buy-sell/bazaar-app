@@ -25,7 +25,7 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 
 **Required Must-have Stories**
 
-- [ ] User can create and log in to their account
+- [X] User can create and log in to their account
 - [ ] View a searchable list of available items
 - [ ] Descriptions of each item
 - [ ] See each user's profile (items they are selling and     maybe their needs)
