@@ -12,13 +12,15 @@
 		6EE5A36209758202696C9C6B /* Pods_Bazaar_BazaarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3ABA19738D98ADFF443F8D9 /* Pods_Bazaar_BazaarUITests.framework */; };
 		6F687245275522E100BE68CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F687244275522E100BE68CE /* AppDelegate.swift */; };
 		6F687247275522E100BE68CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F687246275522E100BE68CE /* SceneDelegate.swift */; };
-		6F687249275522E100BE68CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F687248275522E100BE68CE /* ViewController.swift */; };
 		6F68724C275522E100BE68CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F68724A275522E100BE68CE /* Main.storyboard */; };
 		6F68724E275522E200BE68CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F68724D275522E200BE68CE /* Assets.xcassets */; };
 		6F687251275522E200BE68CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F68724F275522E200BE68CE /* LaunchScreen.storyboard */; };
 		6F68725C275522E300BE68CE /* BazaarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F68725B275522E300BE68CE /* BazaarTests.swift */; };
 		6F687266275522E300BE68CE /* BazaarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F687265275522E300BE68CE /* BazaarUITests.swift */; };
 		6F687268275522E300BE68CE /* BazaarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F687267275522E300BE68CE /* BazaarUITestsLaunchTests.swift */; };
+		6F687275275526DB00BE68CE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F687274275526DB00BE68CE /* LoginViewController.swift */; };
+		6F68727B2755287D00BE68CE /* PostDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F68727A2755287D00BE68CE /* PostDetailViewController.swift */; };
+		6F68727D2755288F00BE68CE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F68727C2755288F00BE68CE /* PostViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +48,6 @@
 		6F687241275522E100BE68CE /* Bazaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bazaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F687244275522E100BE68CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F687246275522E100BE68CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6F687248275522E100BE68CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6F68724B275522E100BE68CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6F68724D275522E200BE68CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6F687250275522E200BE68CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +57,9 @@
 		6F687261275522E300BE68CE /* BazaarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BazaarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F687265275522E300BE68CE /* BazaarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BazaarUITests.swift; sourceTree = "<group>"; };
 		6F687267275522E300BE68CE /* BazaarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BazaarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6F687274275526DB00BE68CE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6F68727A2755287D00BE68CE /* PostDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailViewController.swift; sourceTree = "<group>"; };
+		6F68727C2755288F00BE68CE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		8E0B22688483218F0993E944 /* Pods-Bazaar-BazaarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bazaar-BazaarUITests.release.xcconfig"; path = "Target Support Files/Pods-Bazaar-BazaarUITests/Pods-Bazaar-BazaarUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C3ABA19738D98ADFF443F8D9 /* Pods_Bazaar_BazaarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bazaar_BazaarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3264FF1E2571504CE32D503 /* Pods-BazaarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazaarTests.debug.xcconfig"; path = "Target Support Files/Pods-BazaarTests/Pods-BazaarTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,11 +122,13 @@
 			children = (
 				6F687244275522E100BE68CE /* AppDelegate.swift */,
 				6F687246275522E100BE68CE /* SceneDelegate.swift */,
-				6F687248275522E100BE68CE /* ViewController.swift */,
 				6F68724A275522E100BE68CE /* Main.storyboard */,
 				6F68724D275522E200BE68CE /* Assets.xcassets */,
 				6F68724F275522E200BE68CE /* LaunchScreen.storyboard */,
 				6F687252275522E200BE68CE /* Info.plist */,
+				6F687274275526DB00BE68CE /* LoginViewController.swift */,
+				6F68727A2755287D00BE68CE /* PostDetailViewController.swift */,
+				6F68727C2755288F00BE68CE /* PostViewController.swift */,
 			);
 			path = Bazaar;
 			sourceTree = "<group>";
@@ -164,7 +170,6 @@
 				D3264FF1E2571504CE32D503 /* Pods-BazaarTests.debug.xcconfig */,
 				FA4D070DD76CDCF2A1478F17 /* Pods-BazaarTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -407,9 +412,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F687249275522E100BE68CE /* ViewController.swift in Sources */,
+				6F687275275526DB00BE68CE /* LoginViewController.swift in Sources */,
 				6F687245275522E100BE68CE /* AppDelegate.swift in Sources */,
+				6F68727B2755287D00BE68CE /* PostDetailViewController.swift in Sources */,
 				6F687247275522E100BE68CE /* SceneDelegate.swift in Sources */,
+				6F68727D2755288F00BE68CE /* PostViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
