@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -69,7 +68,7 @@
             </objects>
             <point key="canvasLocation" x="154" y="115"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="4Bg-Iv-uoz">
             <objects>
                 <viewController id="FOV-UD-nIC" customClass="HomeViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -123,7 +122,7 @@
                         <viewLayoutGuide key="safeArea" id="fRR-IB-5Lr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Cdk-aP-2EJ"/>
+                    <navigationItem key="navigationItem" title="Home" id="Cdk-aP-2EJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Yl-hm-VIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -184,7 +183,7 @@
             </objects>
             <point key="canvasLocation" x="-810" y="1652"/>
         </scene>
-        <!--Post View Controller-->
+        <!--Post-->
         <scene sceneID="3Rt-eQ-CIr">
             <objects>
                 <viewController id="Dvv-PN-jw7" customClass="PostViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -199,18 +198,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPc-Dz-trQ">
-                                <rect key="frame" x="254" y="142" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="dfR-LU-AWq">
-                                    <children>
-                                        <command title="Bedroom" id="qOq-mM-8qg"/>
-                                        <command title="Kitchen" id="dqC-a1-hOi"/>
-                                        <command title="Living Room" id="UCU-jv-WKB"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Furniture"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odD-Nw-RrY">
                                 <rect key="frame" x="39" y="190" width="87" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -239,13 +226,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-OD-ENg">
-                                <rect key="frame" x="56" y="227" width="97" height="34"/>
+                                <rect key="frame" x="56" y="227" width="296" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-sM-qSd">
-                                <rect key="frame" x="56" y="415" width="97" height="34"/>
+                                <rect key="frame" x="56" y="415" width="296" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -258,7 +245,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-nT-zmO">
-                                <rect key="frame" x="56" y="507" width="97" height="34"/>
+                                <rect key="frame" x="56" y="507" width="296" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -278,25 +265,22 @@
                                     <outletCollection property="gestureRecognizers" destination="1ef-GT-emG" appends="YES" id="57x-Ml-lOA"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRg-tZ-Ixu">
-                                <rect key="frame" x="80" y="142" width="68" height="30"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qsm-nB-xC0">
+                                <rect key="frame" x="124" y="142" width="159" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="JWP-by-wlX">
-                                    <children>
-                                        <command title="Textbook" id="TG7-AB-4NL"/>
-                                        <command title="Course notes" id="MBR-h2-BaV"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Academic"/>
+                                <segments>
+                                    <segment title="Furniture"/>
+                                    <segment title="Academic"/>
+                                </segments>
                                 <connections>
-                                    <action selector="academicButton:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="aVY-aL-uoA"/>
+                                    <action selector="categoryChanged:" destination="Dvv-PN-jw7" eventType="valueChanged" id="KDc-FU-J7r"/>
                                 </connections>
-                            </button>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="TYG-Z8-NFE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="spL-9K-tiz">
+                    <navigationItem key="navigationItem" title="Post" id="spL-9K-tiz">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="FWO-ai-Y7P">
                             <connections>
                                 <action selector="cancelButton:" destination="Dvv-PN-jw7" id="xZx-Mo-5jf"/>
@@ -309,6 +293,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="categorySegmentControl" destination="qsm-nB-xC0" id="C1l-Zm-yNj"/>
                         <outlet property="contactInfoField" destination="h0e-nT-zmO" id="V0x-F3-5Lo"/>
                         <outlet property="descriptionField" destination="wrG-pW-1ws" id="jmG-En-oqQ"/>
                         <outlet property="imageView" destination="lKN-tX-BVv" id="b8b-Le-7G5"/>
@@ -325,7 +310,7 @@
             </objects>
             <point key="canvasLocation" x="-30.434782608695656" y="2414.7321428571427"/>
         </scene>
-        <!--View Controller-->
+        <!--Search-->
         <scene sceneID="2JH-OC-GIY">
             <objects>
                 <viewController id="oNB-rd-7tW" sceneMemberID="viewController">
@@ -335,7 +320,7 @@
                         <viewLayoutGuide key="safeArea" id="1qT-aa-RTp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Xoy-rV-e1k"/>
+                    <navigationItem key="navigationItem" title="Search" id="Xoy-rV-e1k"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLF-X4-akP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

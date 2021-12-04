@@ -13,7 +13,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
 
     //@IBOutlet weak var academicMenu: UIMenu!
-    
+    var selectedCategory : String = "";
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var itemNameField: UITextField!
@@ -24,9 +24,13 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     @IBOutlet weak var contactInfoField: UITextField!
     
+
+    @IBOutlet weak var categorySegmentControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+
     }
     
     @IBAction func imageButon(_ sender: Any) {
@@ -54,7 +58,17 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     }
     
 
-
+    @IBAction func categoryChanged(_ sender: Any) {
+        switch categorySegmentControl.selectedSegmentIndex {
+    case 0:
+        selectedCategory = "Furniture"
+    case 1:
+        selectedCategory = "Academic"
+    default:
+        break
+        }
+    }
+    
     
     @IBAction func postButton(_ sender: Any) {
         let post = PFObject(className: "Posts")
@@ -64,6 +78,7 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         post["pickUpInfo"] = pickupInfoField.text!
         post["contactInfo"] = contactInfoField.text!
         post["author"] = PFUser.current()!
+        post["category"] = selectedCategory
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)
