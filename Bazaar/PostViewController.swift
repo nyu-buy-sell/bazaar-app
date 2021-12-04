@@ -14,6 +14,18 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     //@IBOutlet weak var academicMenu: UIMenu!
     
+    
+    @IBOutlet weak var button: UIButton!
+    @IBOutlet weak var academicButton: UIButton!
+    @IBOutlet weak var furnitureButton: UIButton!
+    @IBOutlet weak var category1Button: UIButton!
+    @IBOutlet weak var category2Button: UIButton!
+    @IBOutlet weak var category3Button: UIButton!
+    
+    var generalCategory: [UIButton] = []
+    var specificCategory: [UIButton] = []
+//    let categories: [UIButton] = [academicButton, furnitureButton, category1Button, category2Button, category3Button ]
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var itemNameField: UITextField!
@@ -26,7 +38,83 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        generalCategory = [academicButton, furnitureButton]
+        specificCategory = [category1Button, category2Button, category3Button]
+        
+        for category in generalCategory {
+            category.isSelected = false
+        }
+        for category in specificCategory {
+            category.isSelected = false
+        }
+        academicButton.setTitle("Academic", for: .normal)
+        furnitureButton.setTitle("Furniture", for: .normal)
+
+
+        
+        
+        
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func onclickAcademicButton(_ sender: Any) {
+        furnitureButton.backgroundColor = .white
+        category1Button.setTitle("textbook", for: .normal)
+        category2Button.isHidden = true
+        category3Button.setTitle("course notes", for: .normal)
+        furnitureButton.isSelected = false
+        academicButton.backgroundColor = .lightGray
+        academicButton.isSelected = true
+
+    }
+    
+    @IBAction func onclickFurnitureButton(_ sender: Any) {
+        academicButton.backgroundColor = .white
+        category1Button.setTitle("bedroom", for: .normal)
+        category2Button.isHidden = false
+        category2Button.setTitle("kitchen", for: .normal)
+        category3Button.setTitle("living room", for: .normal)
+        academicButton.isSelected = false
+        furnitureButton.backgroundColor = .lightGray
+        furnitureButton.isSelected = true
+
+    }
+    
+    @IBAction func onclickCategory1Button(_ sender: Any) {
+        category1Button.backgroundColor = .lightGray
+        category1Button.isSelected = true
+
+        category2Button.isSelected = false
+        category2Button.backgroundColor = .white
+        category3Button.isSelected = false
+        category3Button.backgroundColor = .white
+
+
+    }
+    
+    @IBAction func onclickCategory2Button(_ sender: Any) {
+        category2Button.backgroundColor = .lightGray
+        category2Button.isSelected = true
+
+        category1Button.isSelected = false
+        category1Button.backgroundColor = .white
+        category3Button.isSelected = false
+        category3Button.backgroundColor = .white
+
+
+    }
+    
+    @IBAction func onclickCategory3Button(_ sender: Any) {
+        category3Button.backgroundColor = .lightGray
+        category3Button.isSelected = true
+
+        category1Button.isSelected = false
+        category1Button.backgroundColor = .white
+        category2Button.isSelected = false
+        category2Button.backgroundColor = .white
+
+
     }
     
     @IBAction func imageButon(_ sender: Any) {
@@ -64,6 +152,21 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         post["pickUpInfo"] = pickupInfoField.text!
         post["contactInfo"] = contactInfoField.text!
         post["author"] = PFUser.current()!
+        
+        
+        for category in generalCategory {
+            print(category.isSelected)
+            if category.isSelected == true{
+                print(category.title(for:.normal))
+                post["generalCategory"] = category.title(for:.normal)
+            }
+        }
+        for category in specificCategory {
+            if category.isSelected == true{
+                print("speCat true")
+                post["specificCategory"] = category.title(for:.normal)
+            }
+        }
         
         let imageData = imageView.image!.pngData()
         let file = PFFileObject(data: imageData!)

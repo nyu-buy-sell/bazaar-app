@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
-        <capability name="UIMenu" message="Requires Xcode 11 or later." minToolsVersion="11.0" requiredIntegratedClassName="UICommandDiff"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -193,26 +192,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mue-hX-fvt">
-                                <rect key="frame" x="38" y="104" width="130" height="30"/>
+                                <rect key="frame" x="249" y="105" width="130" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" changesSelectionAsPrimaryAction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cPc-Dz-trQ">
-                                <rect key="frame" x="254" y="142" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="dfR-LU-AWq">
-                                    <children>
-                                        <command title="Bedroom" id="qOq-mM-8qg"/>
-                                        <command title="Kitchen" id="dqC-a1-hOi"/>
-                                        <command title="Living Room" id="UCU-jv-WKB"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Furniture"/>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odD-Nw-RrY">
-                                <rect key="frame" x="39" y="190" width="87" height="21"/>
+                                <rect key="frame" x="40" y="110" width="87" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -239,13 +226,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Epe-OD-ENg">
-                                <rect key="frame" x="56" y="227" width="97" height="34"/>
+                                <rect key="frame" x="38" y="150" width="97" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cIP-sM-qSd">
-                                <rect key="frame" x="56" y="415" width="97" height="34"/>
+                                <rect key="frame" x="56" y="415" width="296" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -258,7 +245,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h0e-nT-zmO">
-                                <rect key="frame" x="56" y="507" width="97" height="34"/>
+                                <rect key="frame" x="56" y="507" width="296" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -278,18 +265,50 @@
                                     <outletCollection property="gestureRecognizers" destination="1ef-GT-emG" appends="YES" id="57x-Ml-lOA"/>
                                 </connections>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" showsMenuAsPrimaryAction="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qRg-tZ-Ixu">
-                                <rect key="frame" x="80" y="142" width="68" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krP-d4-d38">
+                                <rect key="frame" x="169" y="150" width="116" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <menu key="menu" id="JWP-by-wlX">
-                                    <children>
-                                        <command title="Textbook" id="TG7-AB-4NL"/>
-                                        <command title="Course notes" id="MBR-h2-BaV"/>
-                                    </children>
-                                </menu>
-                                <state key="normal" title="Academic"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Academic"/>
                                 <connections>
-                                    <action selector="academicButton:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="aVY-aL-uoA"/>
+                                    <action selector="onclickAcademicButton:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="erO-HC-v3c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5I-GQ-MVx">
+                                <rect key="frame" x="287" y="150" width="101" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Furniture"/>
+                                <connections>
+                                    <action selector="onclickFurnitureButton:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="wZU-oY-4n8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBM-Z9-Zsq">
+                                <rect key="frame" x="28" y="210" width="111" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="1."/>
+                                <connections>
+                                    <action selector="onclickCategory1Button:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="jlR-TJ-tgz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVr-ji-KeP">
+                                <rect key="frame" x="136" y="210" width="117" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="2. "/>
+                                <connections>
+                                    <action selector="onclickCategory2Button:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="yNj-7s-92f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Tb-Sh-Yw3">
+                                <rect key="frame" x="248" y="210" width="131" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="3. "/>
+                                <connections>
+                                    <action selector="onclickCategory2Button:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="KQj-et-z8Y"/>
+                                    <action selector="onclickCategory3Button:" destination="Dvv-PN-jw7" eventType="touchUpInside" id="7aL-Ng-ABW"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -309,8 +328,13 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="academicButton" destination="krP-d4-d38" id="KBd-3Q-jCv"/>
+                        <outlet property="category1Button" destination="MBM-Z9-Zsq" id="qMx-m1-WOB"/>
+                        <outlet property="category2Button" destination="YVr-ji-KeP" id="lt7-qN-d7j"/>
+                        <outlet property="category3Button" destination="3Tb-Sh-Yw3" id="DLu-i8-oSY"/>
                         <outlet property="contactInfoField" destination="h0e-nT-zmO" id="V0x-F3-5Lo"/>
                         <outlet property="descriptionField" destination="wrG-pW-1ws" id="jmG-En-oqQ"/>
+                        <outlet property="furnitureButton" destination="u5I-GQ-MVx" id="zkb-nh-tyY"/>
                         <outlet property="imageView" destination="lKN-tX-BVv" id="b8b-Le-7G5"/>
                         <outlet property="itemNameField" destination="Epe-OD-ENg" id="b7t-k6-Tkg"/>
                         <outlet property="pickupInfoField" destination="cIP-sM-qSd" id="HtY-q4-SLw"/>
