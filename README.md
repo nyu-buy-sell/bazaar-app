@@ -30,7 +30,7 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 ![](https://media.giphy.com/media/MlZqaoHh8iwT7jRtOo/giphy.gif)
 - [X] User has a page to create a new post 
 
-![](http://g.recordit.co/PNOnuM2MnY.gif)
+![](http://g.recordit.co/WPeh7upuib.gif)
 
 - [X] User stays logged in
 
