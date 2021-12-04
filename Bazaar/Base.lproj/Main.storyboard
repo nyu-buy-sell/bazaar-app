@@ -24,13 +24,13 @@
                                 <rect key="frame" x="31" y="367" width="352" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="username"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xTB-5r-VQw">
                                 <rect key="frame" x="31" y="431" width="352" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pxm-02-22B">
                                 <rect key="frame" x="31" y="513" width="352" height="52"/>
@@ -67,6 +67,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="154" y="115"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="b9K-ih-XEo">
+            <objects>
+                <viewController id="db2-MF-gwf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIg-kF-YJt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="TWv-lh-JNd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ntZ-fy-rh0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="350"/>
         </scene>
         <!--Home-->
         <scene sceneID="4Bg-Iv-uoz">
@@ -147,7 +162,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="2jI-Os-xZW">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="mMW-rN-QGF" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="FeedNavigationController" modalPresentationStyle="fullScreen" id="mMW-rN-QGF" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O7I-xe-qqq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
