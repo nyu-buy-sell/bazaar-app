@@ -24,6 +24,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
             window?.rootViewController = feedNavigationController
             
+
         }
     }
 
