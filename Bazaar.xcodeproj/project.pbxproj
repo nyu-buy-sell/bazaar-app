@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		4056F53ED5C369F682DC91B3 /* Pods_Bazaar_BazaarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB990CCDEE4B8F9B36F9BDC /* Pods_Bazaar_BazaarUITests.framework */; };
 		6F8EED8F2761AE6300726698 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED8E2761AE6300726698 /* ProfileViewController.swift */; };
+		6F8EED912761B84C00726698 /* ProfileSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */; };
+		6F8EED932762AEAC00726698 /* RegisteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */; };
+		6F8EED952762AFB400726698 /* RegisterPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */; };
 		6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB2FC927599CCC0001050D /* HomeViewController.swift */; };
 		6FCB2FCC2759A1380001050D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB2FCB2759A1380001050D /* PostViewController.swift */; };
 		B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5391EE527496DB6000E5923 /* AppDelegate.swift */; };
@@ -47,6 +50,9 @@
 		48E5D966406A14966254D3A8 /* Pods_BazaarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BazaarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DD997FE4A0321EB52C95A47 /* Pods-Bazaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bazaar.release.xcconfig"; path = "Target Support Files/Pods-Bazaar/Pods-Bazaar.release.xcconfig"; sourceTree = "<group>"; };
 		6F8EED8E2761AE6300726698 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewController.swift; sourceTree = "<group>"; };
+		6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteInfoViewController.swift; sourceTree = "<group>"; };
+		6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoViewController.swift; sourceTree = "<group>"; };
 		6FCB2FC927599CCC0001050D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6FCB2FCB2759A1380001050D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		85BA2E80B6D2036BF9974FFE /* Pods-BazaarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazaarTests.release.xcconfig"; path = "Target Support Files/Pods-BazaarTests/Pods-BazaarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				6FCB2FC927599CCC0001050D /* HomeViewController.swift */,
 				6FCB2FCB2759A1380001050D /* PostViewController.swift */,
 				6F8EED8E2761AE6300726698 /* ProfileViewController.swift */,
+				6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */,
+				6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */,
+				6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */,
 			);
 			path = Bazaar;
 			sourceTree = "<group>";
@@ -415,12 +424,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F8EED932762AEAC00726698 /* RegisteInfoViewController.swift in Sources */,
 				6F8EED8F2761AE6300726698 /* ProfileViewController.swift in Sources */,
 				B5391EEA27496DB6000E5923 /* LoginViewController.swift in Sources */,
 				B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */,
+				6F8EED952762AFB400726698 /* RegisterPhotoViewController.swift in Sources */,
 				B5391EE827496DB6000E5923 /* SceneDelegate.swift in Sources */,
 				6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */,
 				6FCB2FCC2759A1380001050D /* PostViewController.swift in Sources */,
+				6F8EED912761B84C00726698 /* ProfileSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
