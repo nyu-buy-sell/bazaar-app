@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4056F53ED5C369F682DC91B3 /* Pods_Bazaar_BazaarUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB990CCDEE4B8F9B36F9BDC /* Pods_Bazaar_BazaarUITests.framework */; };
+		50FF39B827629F82006C338D /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FF39B727629F82006C338D /* HomePostCell.swift */; };
 		6F8EED8F2761AE6300726698 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED8E2761AE6300726698 /* ProfileViewController.swift */; };
 		6F8EED912761B84C00726698 /* ProfileSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */; };
 		6F8EED932762AEAC00726698 /* RegisteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */; };
@@ -51,6 +52,7 @@
 		159480A0E557CB2E3B827C1D /* Pods-BazaarTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazaarTests.debug.xcconfig"; path = "Target Support Files/Pods-BazaarTests/Pods-BazaarTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1EB990CCDEE4B8F9B36F9BDC /* Pods_Bazaar_BazaarUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bazaar_BazaarUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E5D966406A14966254D3A8 /* Pods_BazaarTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BazaarTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FF39B727629F82006C338D /* HomePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostCell.swift; sourceTree = "<group>"; };
 		5DD997FE4A0321EB52C95A47 /* Pods-Bazaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bazaar.release.xcconfig"; path = "Target Support Files/Pods-Bazaar/Pods-Bazaar.release.xcconfig"; sourceTree = "<group>"; };
 		6F8EED8E2761AE6300726698 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				6FCB2FC927599CCC0001050D /* HomeViewController.swift */,
 				6FCB2FCB2759A1380001050D /* PostViewController.swift */,
 				6F8EED8E2761AE6300726698 /* ProfileViewController.swift */,
+				50FF39B727629F82006C338D /* HomePostCell.swift */,
 				6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */,
 				6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */,
 				6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */,
@@ -439,6 +442,7 @@
 				B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */,
 				6F8EED9B2762BEEB00726698 /* ProfilePostCell.swift in Sources */,
 				6F8EED972762BE1400726698 /* ProfilePostViewController.swift in Sources */,
+				50FF39B827629F82006C338D /* HomePostCell.swift in Sources */,
 				6F8EED952762AFB400726698 /* RegisterPhotoViewController.swift in Sources */,
 				B5391EE827496DB6000E5923 /* SceneDelegate.swift in Sources */,
 				6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */,
