@@ -10,13 +10,44 @@ import Parse
 import AlamofireImage
 
 class ProfileViewController: UIViewController {
+    
+    
+    @IBOutlet weak var profilePicImageView: UIImageView!
+    @IBOutlet weak var userName: UILabel!
+    @IBOutlet weak var location: UILabel!
+    let user = PFUser.current()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        userName.text = user!["username"] as? String
+        if(user!["location"] != nil){
+            location.text = user!["location"] as? String
+        }
+        if(user!["profilePic"] != nil){
+            let imageFile = user!["profilePic"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            profilePicImageView.af_setImage(withURL: url)
+        }
         // Do any additional setup after loading the view.
+        
+        viewWillAppear(true)
+        
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        userName.text = user!["username"] as? String
+        if(user!["location"] != nil){
+            location.text = user!["location"] as? String
+        }
+        if(user!["profilePic"] != nil){
+            let imageFile = user!["profilePic"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            profilePicImageView.af_setImage(withURL: url)
+        }
+    }
+
     
     @IBAction func onLogoutButton(_ sender: Any) {
         

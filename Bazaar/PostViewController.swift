@@ -50,9 +50,6 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
         academicButton.setTitle("Academic", for: .normal)
         furnitureButton.setTitle("Furniture", for: .normal)
-
-
-        
         
         
         // Do any additional setup after loading the view.
