@@ -39,21 +39,23 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        generalCategory = [academicButton, furnitureButton]
-        specificCategory = [category1Button, category2Button, category3Button]
-        
-        for category in generalCategory {
-            category.isSelected = false
-        }
-        for category in specificCategory {
-            category.isSelected = false
-        }
+//        generalCategory = [academicButton, furnitureButton]
+//        specificCategory = [category1Button, category2Button, category3Button]
+//
+//        for category in generalCategory {
+//            category.isSelected = false
+//        }
+//        for category in specificCategory {
+//            category.isSelected = false
+//        }
+        clearAll()
         academicButton.setTitle("Academic", for: .normal)
         furnitureButton.setTitle("Furniture", for: .normal)
         
         
         // Do any additional setup after loading the view.
     }
+    
     
     @IBAction func onclickAcademicButton(_ sender: Any) {
         furnitureButton.backgroundColor = .white
@@ -171,7 +173,8 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         post.saveInBackground{(success, error) in
             if success{
-                self.dismiss(animated: true, completion: nil)
+                //self.dismiss(animated: true, completion: nil)
+                self.clearAll()
                 print("saved")
             }else{
                 print("error")
@@ -180,7 +183,30 @@ class PostViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     }
     
+    func clearAll(){
+        itemNameField.text = ""
+        descriptionField.text = ""
+        contactInfoField.text = ""
+        pickupInfoField.text = ""
+        
+        generalCategory = [academicButton, furnitureButton]
+        specificCategory = [category1Button, category2Button, category3Button]
+        for category in generalCategory {
+            category.isSelected = false
+            category.backgroundColor = .white
+        }
+        for category in specificCategory {
+            category.isSelected = false
+            category.backgroundColor = .white
+
+        }
+        
+        
+        imageView.image = UIImage(named: "image_placeholder")
+    }
+    
     @IBAction func cancelButton(_ sender: Any) {
+        clearAll()
     }
 
     

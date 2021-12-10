@@ -12,6 +12,9 @@
 		6F8EED912761B84C00726698 /* ProfileSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */; };
 		6F8EED932762AEAC00726698 /* RegisteInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */; };
 		6F8EED952762AFB400726698 /* RegisterPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */; };
+		6F8EED972762BE1400726698 /* ProfilePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED962762BE1400726698 /* ProfilePostViewController.swift */; };
+		6F8EED9B2762BEEB00726698 /* ProfilePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED9A2762BEEB00726698 /* ProfilePostCell.swift */; };
+		6F8EED9D2763A6C400726698 /* EditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED9C2763A6C400726698 /* EditPostViewController.swift */; };
 		6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB2FC927599CCC0001050D /* HomeViewController.swift */; };
 		6FCB2FCC2759A1380001050D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB2FCB2759A1380001050D /* PostViewController.swift */; };
 		B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5391EE527496DB6000E5923 /* AppDelegate.swift */; };
@@ -53,6 +56,9 @@
 		6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileSettingViewController.swift; sourceTree = "<group>"; };
 		6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisteInfoViewController.swift; sourceTree = "<group>"; };
 		6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhotoViewController.swift; sourceTree = "<group>"; };
+		6F8EED962762BE1400726698 /* ProfilePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostViewController.swift; sourceTree = "<group>"; };
+		6F8EED9A2762BEEB00726698 /* ProfilePostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePostCell.swift; sourceTree = "<group>"; };
+		6F8EED9C2763A6C400726698 /* EditPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPostViewController.swift; sourceTree = "<group>"; };
 		6FCB2FC927599CCC0001050D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		6FCB2FCB2759A1380001050D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		85BA2E80B6D2036BF9974FFE /* Pods-BazaarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazaarTests.release.xcconfig"; path = "Target Support Files/Pods-BazaarTests/Pods-BazaarTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 				6F8EED902761B84C00726698 /* ProfileSettingViewController.swift */,
 				6F8EED922762AEAC00726698 /* RegisteInfoViewController.swift */,
 				6F8EED942762AFB400726698 /* RegisterPhotoViewController.swift */,
+				6F8EED962762BE1400726698 /* ProfilePostViewController.swift */,
+				6F8EED9A2762BEEB00726698 /* ProfilePostCell.swift */,
+				6F8EED9C2763A6C400726698 /* EditPostViewController.swift */,
 			);
 			path = Bazaar;
 			sourceTree = "<group>";
@@ -428,10 +437,13 @@
 				6F8EED8F2761AE6300726698 /* ProfileViewController.swift in Sources */,
 				B5391EEA27496DB6000E5923 /* LoginViewController.swift in Sources */,
 				B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */,
+				6F8EED9B2762BEEB00726698 /* ProfilePostCell.swift in Sources */,
+				6F8EED972762BE1400726698 /* ProfilePostViewController.swift in Sources */,
 				6F8EED952762AFB400726698 /* RegisterPhotoViewController.swift in Sources */,
 				B5391EE827496DB6000E5923 /* SceneDelegate.swift in Sources */,
 				6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */,
 				6FCB2FCC2759A1380001050D /* PostViewController.swift in Sources */,
+				6F8EED9D2763A6C400726698 /* EditPostViewController.swift in Sources */,
 				6F8EED912761B84C00726698 /* ProfileSettingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
