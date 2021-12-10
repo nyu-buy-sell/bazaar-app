@@ -81,7 +81,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="355" id="VRW-AZ-7eV">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomePostCell" rowHeight="355" id="VRW-AZ-7eV" customClass="HomePostCell" customModule="Bazaar" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="355"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VRW-AZ-7eV" id="Mnt-1M-TTn">
@@ -113,6 +113,10 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="itemNameLabel" destination="tHN-8h-rak" id="ZiF-Gy-sZO"/>
+                                            <outlet property="itemPhotoView" destination="f3Q-L2-iWn" id="F0b-wh-3Jb"/>
+                                            <outlet property="userNameLabel" destination="kWh-7S-0mh" id="beR-op-ShI"/>
+                                            <outlet property="userPhotoView" destination="TdH-jz-lHr" id="Axk-S2-DfA"/>
                                             <segue destination="HOk-JZ-OWu" kind="show" id="ica-Lp-Xcg"/>
                                         </connections>
                                     </tableViewCell>
@@ -123,6 +127,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="Cdk-aP-2EJ"/>
+                    <connections>
+                        <outlet property="tableView" destination="i0F-RH-nmr" id="CXB-be-OZv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Yl-hm-VIl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
