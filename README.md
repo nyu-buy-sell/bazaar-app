@@ -28,7 +28,7 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 - [X] User can create and log in to their account
 
 ![](https://media.giphy.com/media/MlZqaoHh8iwT7jRtOo/giphy.gif)
-![](https://media.giphy.com/media/tjkYWExs6IX1pjxSBq/giphy.gif)
+
 - [X] User has a page to create a new post 
 
 ![](http://g.recordit.co/WPeh7upuib.gif)
@@ -37,7 +37,8 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 
 ![](http://g.recordit.co/8LfQB4ykXA.gif)
 
-- [ ]  View a home feed of recently posted items
+- [X]  View a home feed of recently posted items
+ ![](https://media.giphy.com/media/tjkYWExs6IX1pjxSBq/giphy.gif)
 - [ ] Search through list of available items by keyword
 - [ ] Descriptions of each item
 - [ ] See each user's profile (items they are selling and     maybe their needs)
