@@ -36,8 +36,8 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 
 ![](http://g.recordit.co/8LfQB4ykXA.gif)
 
-
-- [ ] View a searchable list of available items
+- [ ]  View a home feed of recently posted items
+- [ ] Search through list of available items by keyword
 - [ ] Descriptions of each item
 - [ ] See each user's profile (items they are selling and     maybe their needs)
     * List contact info (email, phone #) of sellers
