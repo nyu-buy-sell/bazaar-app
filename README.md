@@ -28,6 +28,7 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 - [X] User can create and log in to their account
 
 ![](https://media.giphy.com/media/MlZqaoHh8iwT7jRtOo/giphy.gif)
+![](https://media.giphy.com/media/tjkYWExs6IX1pjxSBq/giphy.gif)
 - [X] User has a page to create a new post 
 
 ![](http://g.recordit.co/WPeh7upuib.gif)
