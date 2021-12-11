@@ -59,7 +59,17 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let urlString = imageFile.url!
         let url = URL(string: urlString)!
         cell.itemPhotoView.af_setImage(withURL: url)
-        print(posts)
+        
+//        let currentUser = PFUser.current()
+        if(user["profilePic"] != nil){
+            let imageFile = user["profilePic"] as! PFFileObject
+            let urlString = imageFile.url!
+            let url = URL(string: urlString)!
+            cell.userPhotoView.af_setImage(withURL: url)
+        }
+        
+        
+//        print(posts)
         return cell
         
     }
