@@ -409,7 +409,7 @@
         <scene sceneID="ykY-L0-NVk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FQ5-tS-K2E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="sIr-xD-dRL"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="sIr-xD-dRL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="oJr-Yr-DhJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -610,7 +610,7 @@
         <scene sceneID="T1D-Rr-BSM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2BP-xx-Ity" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Post" id="2bX-hK-2Wq"/>
+                    <tabBarItem key="tabBarItem" title="Post" image="plus.square.dashed" catalog="system" id="2bX-hK-2Wq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yxe-zj-ET2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -859,7 +859,7 @@
         <scene sceneID="cRe-ql-HY9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qpz-7t-IOI" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" id="lI9-be-PEk"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="icons8-search-2" id="lI9-be-PEk"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fC4-Cx-QGd">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1006,9 +1006,12 @@
         <segue reference="ERN-rn-2NL"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+        <image name="icons8-search-2" width="22" height="22"/>
         <image name="image_placeholder" width="375" height="375"/>
         <image name="nyu b&amp;s logo-2" width="500" height="500"/>
         <image name="person" width="12" height="17"/>
+        <image name="plus.square.dashed" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
