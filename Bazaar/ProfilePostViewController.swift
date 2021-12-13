@@ -92,6 +92,21 @@ class ProfilePostViewController: UIViewController, UITableViewDelegate, UITableV
 
             }
         }
+        
+//        let testPost = query.getObjectInBackground(withId: "fbwbC9zBoo")
+//        print(testPost)
+        
+        
+//        testPost.deleteInBackground{ (succeeded, error) in
+//            if (succeeded) {
+//                print("deleted")
+//            } else {
+//                print("fail to deleted")
+//
+//            }
+//        }
+
+
 
     }
     
