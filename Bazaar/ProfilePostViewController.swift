@@ -15,8 +15,7 @@ class ProfilePostViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet var tableView: UITableView!
     
     var posts = [PFObject]()
-    let query = PFQuery(className: "Posts")//create a query
-    
+    let query = PFQuery(className: "Posts")//create a query    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +23,9 @@ class ProfilePostViewController: UIViewController, UITableViewDelegate, UITableV
         tableView.dataSource = self
 
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
     }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -86,10 +88,11 @@ class ProfilePostViewController: UIViewController, UITableViewDelegate, UITableV
         print(post)
         post.deleteInBackground{ (succeeded, error) in
             if (succeeded) {
+                self.posts.remove(at: indexpath.row)
+                self.tableView.reloadData()
                 print("deleted")
             } else {
                 print("fail to deleted")
-
             }
         }
         
