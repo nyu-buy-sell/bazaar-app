@@ -73,12 +73,24 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
         
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+         
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let post = posts[indexPath.row]
+        
+        let IndividualItemDetails = segue.destination as! IndividualItemDetailsViewController
+        IndividualItemDetails.post = post
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
     /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
