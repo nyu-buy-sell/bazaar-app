@@ -19,6 +19,7 @@
 		6F8EED9D2763A6C400726698 /* EditPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED9C2763A6C400726698 /* EditPostViewController.swift */; };
 		6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB2FC927599CCC0001050D /* HomeViewController.swift */; };
 		6FCB2FCC2759A1380001050D /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCB2FCB2759A1380001050D /* PostViewController.swift */; };
+		B530125227644CE90046C423 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B530125127644CE90046C423 /* SearchViewController.swift */; };
 		B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5391EE527496DB6000E5923 /* AppDelegate.swift */; };
 		B5391EE827496DB6000E5923 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5391EE727496DB6000E5923 /* SceneDelegate.swift */; };
 		B5391EEA27496DB6000E5923 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5391EE927496DB6000E5923 /* LoginViewController.swift */; };
@@ -67,6 +68,7 @@
 		6FCB2FCB2759A1380001050D /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		85BA2E80B6D2036BF9974FFE /* Pods-BazaarTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BazaarTests.release.xcconfig"; path = "Target Support Files/Pods-BazaarTests/Pods-BazaarTests.release.xcconfig"; sourceTree = "<group>"; };
 		870AE338435D415670DE1D3D /* Pods-Bazaar-BazaarUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bazaar-BazaarUITests.release.xcconfig"; path = "Target Support Files/Pods-Bazaar-BazaarUITests/Pods-Bazaar-BazaarUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B530125127644CE90046C423 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		B5391EE227496DB6000E5923 /* Bazaar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bazaar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5391EE527496DB6000E5923 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5391EE727496DB6000E5923 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				B5391EE727496DB6000E5923 /* SceneDelegate.swift */,
 				B5391EE927496DB6000E5923 /* LoginViewController.swift */,
 				B5391EEB27496DB6000E5923 /* Main.storyboard */,
+				B530125127644CE90046C423 /* SearchViewController.swift */,
 				B5391EEE27496DB8000E5923 /* Assets.xcassets */,
 				B5391EF027496DB8000E5923 /* LaunchScreen.storyboard */,
 				B5391EF327496DB8000E5923 /* Info.plist */,
@@ -448,6 +451,7 @@
 				50FF39B827629F82006C338D /* HomePostCell.swift in Sources */,
 				50936CB7276C117B005B75B8 /* IndividualItemDetailsViewController.swift in Sources */,
 				6F8EED952762AFB400726698 /* RegisterPhotoViewController.swift in Sources */,
+				B530125227644CE90046C423 /* SearchViewController.swift in Sources */,
 				B5391EE827496DB6000E5923 /* SceneDelegate.swift in Sources */,
 				6FCB2FCA27599CCC0001050D /* HomeViewController.swift in Sources */,
 				6FCB2FCC2759A1380001050D /* PostViewController.swift in Sources */,
