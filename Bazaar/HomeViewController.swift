@@ -31,8 +31,8 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         let query = PFQuery(className: "Posts")
         query.includeKey("author")
-        query.limit = 30
-        
+        query.limit = 50
+        query.order(byDescending: "updatedAt")
         query.findObjectsInBackground{(posts, error) in
             if posts != nil{
                 self.posts = posts!
@@ -72,6 +72,30 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
 //        print(posts)
         return cell
         
+    }
+    
+    
+    //preparation stage before navigation
+    override func prepare (for segue: UIStoryboardSegue, sender: Any?){
+        //get the new view controller using segue.destination
+        //pass the selected object to the new view controller
+        print("Laoding up the details scree")
+
+        //find selected post
+        let cell = sender as! UITableViewCell //casting
+        let indexPath = tableView.indexPath(for:cell)! //ask tableView for the index of teh cell
+        print(indexPath.row)
+        let post = posts[indexPath.row] //find the post using the index
+        print(post)
+//        let point = sender.convert(CGPoint.zero, to: tableView)
+//        guard let indexpath = tableView.indexPathForRow(at: point)
+//        else{return}
+
+//        //pass selected movie to the details view controller
+        let detailViewController = segue.destination as! HomePostViewController
+        detailViewController.post = post
+//
+        tableView.deselectRow(at: indexPath, animated: true)
     }
 
     /*
