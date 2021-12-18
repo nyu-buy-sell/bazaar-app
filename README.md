@@ -50,7 +50,7 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 
 ![](https://media.giphy.com/media/LQQqny9Gn1balpVoP9/giphy.gif)
 
-- [ ] See each user's profile (incl. items they are selling) and option to change information on own profile
+- [X] See each user's profile (incl. items they are selling) and option to change information on own profile
     * List contact info (email, phone #) of sellers
  
 ![](https://media.giphy.com/media/K1ZlVJXFlz0x47jB6f/giphy.gif)
