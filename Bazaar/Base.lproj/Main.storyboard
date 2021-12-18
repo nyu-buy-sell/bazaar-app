@@ -177,7 +177,7 @@
                                     <outletCollection property="gestureRecognizers" destination="Fai-Xz-qwu" appends="YES" id="gjN-0z-jM8"/>
                                 </connections>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now uplaod a profile pic!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-ci-9z2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Now upload a profile pic!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIW-ci-9z2">
                                 <rect key="frame" x="37" y="168" width="341" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -218,7 +218,7 @@
             </objects>
             <point key="canvasLocation" x="2350.7246376811595" y="823.66071428571422"/>
         </scene>
-        <!--Other User Profile View Controller-->
+        <!--User Profile-->
         <scene sceneID="hcg-c1-g5G">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Vk5-Un-6no" customClass="OtherUserProfileViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -277,7 +277,7 @@
                         <viewLayoutGuide key="safeArea" id="l8c-fJ-qBx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="TF6-bJ-GF8">
+                    <navigationItem key="navigationItem" title="User Profile" id="TF6-bJ-GF8">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="8dk-Qj-Xp5">
                             <connections>
                                 <action selector="onclickBackButton:" destination="Vk5-Un-6no" id="aQE-xr-0z9"/>
@@ -296,7 +296,7 @@
             </objects>
             <point key="canvasLocation" x="47.826086956521742" y="3938.8392857142853"/>
         </scene>
-        <!--Home View Controller-->
+        <!--Home-->
         <scene sceneID="4Bg-Iv-uoz">
             <objects>
                 <viewController id="FOV-UD-nIC" customClass="HomeViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -359,7 +359,7 @@
                         <viewLayoutGuide key="safeArea" id="fRR-IB-5Lr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Cdk-aP-2EJ"/>
+                    <navigationItem key="navigationItem" title="Home" id="Cdk-aP-2EJ"/>
                     <connections>
                         <outlet property="searchBar" destination="lYu-I0-dE3" id="gVw-sv-Cbc"/>
                         <outlet property="tableView" destination="i0F-RH-nmr" id="CXB-be-OZv"/>
@@ -520,7 +520,7 @@
             </objects>
             <point key="canvasLocation" x="-810" y="1652"/>
         </scene>
-        <!--Post View Controller-->
+        <!--Create Post-->
         <scene sceneID="3Rt-eQ-CIr">
             <objects>
                 <viewController id="Dvv-PN-jw7" customClass="PostViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -652,7 +652,7 @@
                         <viewLayoutGuide key="safeArea" id="TYG-Z8-NFE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="spL-9K-tiz">
+                    <navigationItem key="navigationItem" title="Create Post" id="spL-9K-tiz">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="FWO-ai-Y7P">
                             <connections>
                                 <action selector="cancelButton:" destination="Dvv-PN-jw7" id="xZx-Mo-5jf"/>
@@ -752,7 +752,7 @@
             </objects>
             <point key="canvasLocation" x="19" y="1625"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Profile-->
         <scene sceneID="Yac-wa-YS4">
             <objects>
                 <viewController id="CHj-yx-Poc" customClass="ProfileViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -810,7 +810,7 @@
                         <viewLayoutGuide key="safeArea" id="py8-T9-lqo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CMJ-Fm-p4H">
+                    <navigationItem key="navigationItem" title="Profile" id="CMJ-Fm-p4H">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="YJ2-Yc-zDw">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="uI4-hm-ZZ6">
                                 <rect key="frame" x="307" y="5" width="87" height="34.5"/>
@@ -833,7 +833,7 @@
             </objects>
             <point key="canvasLocation" x="1769.5652173913045" y="2414.7321428571427"/>
         </scene>
-        <!--Profile Post View Controller-->
+        <!--Posts-->
         <scene sceneID="mvR-Jb-Ejg">
             <objects>
                 <viewController id="tZk-gg-UDv" customClass="ProfilePostViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -891,7 +891,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="EZ6-ea-ya7">
+                    <navigationItem key="navigationItem" title="Posts" id="EZ6-ea-ya7">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="BQj-1I-Ut4">
                             <connections>
                                 <action selector="onclickBackButton:" destination="tZk-gg-UDv" id="wCn-TU-73v"/>
@@ -906,7 +906,7 @@
             </objects>
             <point key="canvasLocation" x="3624.6376811594205" y="2088.6160714285716"/>
         </scene>
-        <!--Profile Setting View Controller-->
+        <!--Settings-->
         <scene sceneID="FdO-kT-bEv">
             <objects>
                 <viewController id="TTR-sX-4Hh" customClass="ProfileSettingViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -952,7 +952,7 @@
                         <viewLayoutGuide key="safeArea" id="nLO-1X-vEm"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="KMc-h3-94u">
+                    <navigationItem key="navigationItem" title="Settings" id="KMc-h3-94u">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="JkS-Md-CIi">
                             <connections>
                                 <action selector="onCancelButton:" destination="TTR-sX-4Hh" id="pTs-eW-0Uu"/>
@@ -1091,7 +1091,7 @@
             </objects>
             <point key="canvasLocation" x="2957" y="115"/>
         </scene>
-        <!--User Post View Controller-->
+        <!--Posts-->
         <scene sceneID="PEw-6l-xsI">
             <objects>
                 <viewController id="3RZ-Rs-Ufz" customClass="UserPostViewController" customModule="Bazaar" customModuleProvider="target" sceneMemberID="viewController">
@@ -1135,7 +1135,7 @@
                             </tableViewCell>
                         </prototypes>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fM0-Fd-Z3F">
+                    <navigationItem key="navigationItem" title="Posts" id="fM0-Fd-Z3F">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="40b-Ee-45R">
                             <connections>
                                 <action selector="onclickBackButton:" destination="3RZ-Rs-Ufz" id="OMV-fS-pug"/>
@@ -1188,7 +1188,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BsG-AY-DkS"/>
+        <segue reference="ERN-rn-2NL"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="homekit" catalog="system" width="128" height="106"/>
