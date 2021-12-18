@@ -17,6 +17,7 @@ class UserPostViewController: UIViewController, UITableViewDelegate, UITableView
     var user = PFObject.init(className: "User")
 
     override func viewDidLoad() {
+        print("user posts")
         super.viewDidLoad()
         
         tableView.delegate = self
@@ -35,17 +36,20 @@ class UserPostViewController: UIViewController, UITableViewDelegate, UITableView
 
         query.findObjectsInBackground {(posts, error) in
             if posts != nil{//if there is query
-                print(posts)
+                //print(posts)
                 self.posts = posts!//put in the variable
                 self.tableView.reloadData()//and reload
             }
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return posts.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            print("cell begin")
+
             let cell = tableView.dequeueReusableCell(withIdentifier: "UsersPostCell") as! UsersPostCell
             let post = posts[indexPath.row]
     
@@ -57,6 +61,8 @@ class UserPostViewController: UIViewController, UITableViewDelegate, UITableView
             let url = URL(string: urlString)!
             print(url)
             cell.postPhoroView.af_setImage(withURL: url)
+            print("cell end")
+            print(cell)
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

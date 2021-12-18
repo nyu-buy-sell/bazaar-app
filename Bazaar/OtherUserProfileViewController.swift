@@ -55,7 +55,6 @@ class OtherUserProfileViewController: UIViewController {
     }
     
     override func prepare (for segue: UIStoryboardSegue, sender: Any?){
-        print("clicked")
         if(segue.identifier == "userProfilePostSegue"){
             let nav = segue.destination as! UINavigationController
             let profilePostViewController = nav.viewControllers.first as! UserPostViewController
