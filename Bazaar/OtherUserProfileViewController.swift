@@ -62,10 +62,6 @@ class OtherUserProfileViewController: UIViewController {
             profilePostViewController.user = user
             
         }
-//        let detailViewController = segue.destination as! OtherUserProfileViewController
-//        detailViewController.user = user
-//        let detailViewController = segue.destination as! OtherUserProfileViewController
-        //detailViewController.user = user
 
     }
     

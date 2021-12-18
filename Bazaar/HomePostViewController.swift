@@ -96,10 +96,6 @@ class HomePostViewController: UIViewController {
             profileViewController.user = user
             
         }
-//        let detailViewController = segue.destination as! OtherUserProfileViewController
-//        detailViewController.user = user
-//        let detailViewController = segue.destination as! OtherUserProfileViewController
-        //detailViewController.user = user
         print(user)
         print(user["username"])
     }

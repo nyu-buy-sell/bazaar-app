@@ -14,7 +14,6 @@ class UserPostViewController: UIViewController, UITableViewDelegate, UITableView
     @IBOutlet var tableView: UITableView!
     var posts = [PFObject]()
     let query = PFQuery(className: "Posts")//create a query
-    
     var user = PFObject.init(className: "User")
 
     override func viewDidLoad() {
@@ -47,7 +46,7 @@ class UserPostViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UsersPostCell") as! UsersPostCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "UsersPostCell") as! UsersPostCell
             let post = posts[indexPath.row]
     
             cell.itemNameLabel.text = post["itemName"] as? String

@@ -11,8 +11,6 @@
 		50FF39B827629F82006C338D /* HomePostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FF39B727629F82006C338D /* HomePostCell.swift */; };
 		6F8241EF276D32A5003597C8 /* HomePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8241EE276D32A5003597C8 /* HomePostViewController.swift */; };
 		6F8241F1276D47A3003597C8 /* OtherUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8241F0276D47A3003597C8 /* OtherUserProfileViewController.swift */; };
-		6F8241F5276D59E8003597C8 /* OtherUserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8241F4276D59E8003597C8 /* OtherUserPostViewController.swift */; };
-		6F8241F7276D5AD6003597C8 /* OtherUserPostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8241F6276D5AD6003597C8 /* OtherUserPostTableViewCell.swift */; };
 		6F8241F9276D6728003597C8 /* UserPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8241F8276D6728003597C8 /* UserPostViewController.swift */; };
 		6F8241FB276D675C003597C8 /* UsersPostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8241FA276D675C003597C8 /* UsersPostCell.swift */; };
 		6F8EED8F2761AE6300726698 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8EED8E2761AE6300726698 /* ProfileViewController.swift */; };
@@ -62,8 +60,6 @@
 		5DD997FE4A0321EB52C95A47 /* Pods-Bazaar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bazaar.release.xcconfig"; path = "Target Support Files/Pods-Bazaar/Pods-Bazaar.release.xcconfig"; sourceTree = "<group>"; };
 		6F8241EE276D32A5003597C8 /* HomePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePostViewController.swift; sourceTree = "<group>"; };
 		6F8241F0276D47A3003597C8 /* OtherUserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserProfileViewController.swift; sourceTree = "<group>"; };
-		6F8241F4276D59E8003597C8 /* OtherUserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserPostViewController.swift; sourceTree = "<group>"; };
-		6F8241F6276D5AD6003597C8 /* OtherUserPostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherUserPostTableViewCell.swift; sourceTree = "<group>"; };
 		6F8241F8276D6728003597C8 /* UserPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPostViewController.swift; sourceTree = "<group>"; };
 		6F8241FA276D675C003597C8 /* UsersPostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersPostCell.swift; sourceTree = "<group>"; };
 		6F8EED8E2761AE6300726698 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -190,8 +186,6 @@
 				6F8EED9C2763A6C400726698 /* EditPostViewController.swift */,
 				6F8241EE276D32A5003597C8 /* HomePostViewController.swift */,
 				6F8241F0276D47A3003597C8 /* OtherUserProfileViewController.swift */,
-				6F8241F4276D59E8003597C8 /* OtherUserPostViewController.swift */,
-				6F8241F6276D5AD6003597C8 /* OtherUserPostTableViewCell.swift */,
 				6F8241F8276D6728003597C8 /* UserPostViewController.swift */,
 				6F8241FA276D675C003597C8 /* UsersPostCell.swift */,
 			);
@@ -460,9 +454,7 @@
 				B5391EE627496DB6000E5923 /* AppDelegate.swift in Sources */,
 				6F8EED9B2762BEEB00726698 /* ProfilePostCell.swift in Sources */,
 				6F8241F1276D47A3003597C8 /* OtherUserProfileViewController.swift in Sources */,
-				6F8241F5276D59E8003597C8 /* OtherUserPostViewController.swift in Sources */,
 				6F8241EF276D32A5003597C8 /* HomePostViewController.swift in Sources */,
-				6F8241F7276D5AD6003597C8 /* OtherUserPostTableViewCell.swift in Sources */,
 				6F8EED972762BE1400726698 /* ProfilePostViewController.swift in Sources */,
 				50FF39B827629F82006C338D /* HomePostCell.swift in Sources */,
 				6F8241F9276D6728003597C8 /* UserPostViewController.swift in Sources */,
