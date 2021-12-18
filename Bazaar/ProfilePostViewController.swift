@@ -15,7 +15,8 @@ class ProfilePostViewController: UIViewController, UITableViewDelegate, UITableV
     @IBOutlet var tableView: UITableView!
     
     var posts = [PFObject]()
-    let query = PFQuery(className: "Posts")//create a query    
+    let query = PFQuery(className: "Posts")//create a query
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
