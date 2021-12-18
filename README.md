@@ -42,10 +42,17 @@ An app that facilitates buying and selling items among NYU Students on the Manha
 
 ![](https://media.giphy.com/media/tjkYWExs6IX1pjxSBq/giphy.gif)
  
-- [ ] Search through list of available items by keyword
-- [ ] Descriptions of each item
+- [X] Search through list of available items by keyword
+
+![](https://media.giphy.com/media/VcWtMPml2Fg89jPt8l/giphy.gif)
+
+- [X] Descriptions of each item
+
+![](https://media.giphy.com/media/LQQqny9Gn1balpVoP9/giphy.gif)
+
 - [ ] See each user's profile (items they are selling and     maybe their needs)
     * List contact info (email, phone #) of sellers
+
 
 **Optional Nice-to-have Stories**
 
